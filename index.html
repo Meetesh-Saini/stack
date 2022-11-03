@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="stack.css">
+    <title>Stack</title>
+</head>
+
+<body>
+    <div class="main">
+        <header>Stack<span>&nbsp;by <a href="https://github.com/Meetesh-Saini">Meetesh</a></span></header>
+        <div class="code_editor">
+            <div class="settings">
+                <svg id="play" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-play-fill" viewBox="0 0 16 16">
+                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                </svg>
+                <span><input type="checkbox" name="" id="numeric-mode"> Numeric Mode</span>
+                <button id="config">Registers</button>
+                <a href="help.html"><button id="help">Help</button></a>
+            </div>
+            <div class="code" id="code-file" contenteditable="">push A
+push B
+add
+pop C</div>
+            <div class="code" id="registers" contenteditable=""></div>
+        </div>
+
+        <div class="demo">
+            <div id="register-dock"></div>
+        </div>
+    </div>
+</body>
+<script src="stack.js"></script>
+<script src="main.js"></script>
+</html>
